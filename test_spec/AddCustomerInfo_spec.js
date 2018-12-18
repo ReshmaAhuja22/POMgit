@@ -16,10 +16,18 @@ describe("Adding Customer Information", function() {
 			logger.log('info', 'Adding the Customer Info');
 			browser.sleep(2000);
 			
-            
-		});
+            });
 		
-		
+		//
+		it("Add Customer", function() {
+
+			addcustomer.gotoAddCustomer();
+			addcustomer.addCustomerInfo(data.FirstName, data.LastName,data.PostCode);
+			logger.log('info', 'Adding the Customer Info');
+			browser.sleep(2000);
+			
+            });
+		//
 
 	});
 
